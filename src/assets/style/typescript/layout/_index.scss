@@ -1,0 +1,8 @@
+&.layout {
+  height: 100vh;
+  background-color: $--background-color-base;
+  @import '_header.scss';
+  @import '_main.scss';
+  @import '_aside.scss';
+  @import '_footer.scss';
+}

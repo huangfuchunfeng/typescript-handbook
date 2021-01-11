@@ -1,0 +1,27 @@
+.layout-title {
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.el-main {
+  h1,
+  h2,
+  h3 {
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  p {
+    margin: 1em 0;
+  }
+}
+.el-card__body {
+  padding: 20px 30px;
+}
+.code-notes {
+  background-color: #f2f2f2;
+  padding: 10px;
+}

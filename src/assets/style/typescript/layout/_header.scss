@@ -1,0 +1,26 @@
+.el-header {
+  background-color: $--color-primary;
+}
+.layout_header {
+  $-text-color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: $-text-color;
+  &-title {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+  &-navigation {
+    margin-left: 20px;
+  }
+  .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+    a {
+      font-size: 16px;
+      color: $-text-color;
+    }
+  }
+}

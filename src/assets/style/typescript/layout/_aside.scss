@@ -1,0 +1,57 @@
+.el-aside {
+  background-color: $aside-background-color;
+  overflow: visible;
+  .el-menu {
+    overflow: auto;
+    max-height: calc(100vh - 10px);
+    position: sticky;
+    top: 0;
+    border-right: none;
+    background-color: inherit;
+    .el-menu-item,
+    .el-submenu__title {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #000;
+      border-bottom: 1px solid #dfdfdf;
+    }
+    .el-submenu__title i {
+      color: #000;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+    .el-menu-item.is-active,
+    .el-submenu.is-active .el-submenu__title i {
+      color: $--color-primary;
+    }
+
+    .el-menu-item.is-active,
+    .el-menu-item:hover {
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 2px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 10px;
+        border-left: 2px solid #000;
+      }
+    }
+    .el-menu-item.is-active {
+      &::after {
+        left: 15px;
+        border-left: 2px solid $--color-primary;
+      }
+    }
+
+    .el-submenu.is-active {
+      background-color: $aside-active-background-color;
+    }
+  }
+}
+//

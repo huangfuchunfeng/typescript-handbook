@@ -1,0 +1,20 @@
+//动画
+.c-enter-active,
+.c-leave-active {
+  transition: all 0.5s linear;
+  position: absolute;
+}
+.c-enter-active {
+  transform: translate(10%, 0);
+}
+.c-enter-to {
+  transform: translate(0, 0);
+}
+.c-leave-active {
+  transition: all 0.7s ease-out;
+  transform: translate(0, 0);
+  z-index: 1;
+}
+.c-leave-to {
+  transform: translate(100%, 0);
+}

@@ -1,0 +1,15 @@
+@import 'utilities/_element-plus.scss';
+
+.typescript {
+  //utilities
+  @import 'utilities/_index.scss';
+
+  //themes
+  @import 'themes/_index.scss';
+
+  //layout
+  @import 'layout/_index.scss';
+
+  //states
+  @import 'states/_index.scss';
+}
